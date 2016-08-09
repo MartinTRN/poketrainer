@@ -2,10 +2,10 @@
   "accounts": [
     {
       "auth_service": "google",
-      "username": "userMail",
-      "password": "userPassword",
-      "location": "userLocation",
-      "GMAPS_API_KEY": "userApiKey",
+      "username": "mail",
+      "password": "password",
+      "location": "Théâtre de Verdure, 06000 Nice, France",
+      "GMAPS_API_KEY": "google_api_key",
       "BEHAVIOR": {
     "USE_GOOGLE": true,
     "STEP_SIZE": 200,
