@@ -1,0 +1,10 @@
+CFLAGS ?= -g -std=c99 -fPIC`
+
+all: lib test
+
+lib: encrypt.o
+	cc -shared -o libencrypt.so encrypt.o -lm
+
+test: main.o
+	cc -o test -L. main.o -lencrypt
+

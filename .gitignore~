@@ -88,6 +88,8 @@ ENV/
 .ropeproject
 
 # Personal load details
+config.json
+web_config.json
 .listeners
 .DS_Store
 data_dumps/*.json

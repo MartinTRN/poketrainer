@@ -1,4 +1,4 @@
-FROM python:2.7
+FROM python:2.7.12
 
 #files
 COPY requirements.txt /
@@ -10,10 +10,15 @@ COPY ./PoGoPokeLvl.tsv /
 COPY GAME_MASTER_POKEMON_v0_2.tsv /
 COPY GAME_ATTACKS_v0_1.tsv /
 COPY pokemon.en.json /
+COPY web_config.json /
+
+
 #folders
 COPY ./pgoapi /pgoapi
 COPY ./static /static
 COPY ./templates /templates
+COPY ./EncryptLibrary /EncryptLibrary
+
 
 VOLUME /data_dumps
 
@@ -21,4 +26,7 @@ RUN apt-get update && apt-get install protobuf-compiler -y
 RUN pip install -r requirements.txt
 
 RUN chmod +x launch.sh
+
+EXPOSE 8081
+
 ENTRYPOINT [ "bash", "launch.sh" ]

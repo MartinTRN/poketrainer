@@ -9,4 +9,4 @@ if [ ! -f /config.json ]; then
 fi
 
 python web.py &
-python pokecli.py $1 $2
+python pokecli.py -e EncryptLibrary/libencrypt.so

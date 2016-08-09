@@ -1,0 +1,117 @@
+{
+  "accounts": [
+    {
+      "auth_service": "google",
+      "username": "mail",
+      "password": "password",
+      "location": "Théâtre de Verdure, 06000 Nice, France",
+      "GMAPS_API_KEY": "google_api_key",
+      "BEHAVIOR": {
+    "USE_GOOGLE": true,
+    "STEP_SIZE": 200,
+    "WANDER_STEPS": 999,
+    "EXPERIMENTAL": true,
+    "SKIP_VISITED_FORT_DURATION": 600,
+    "SPIN_ALL_FORTS": true,
+    "AUTO_USE_LUCKY_EGG": false,
+    "STAY_WITHIN_PROXIMITY": 9999,
+    "EXTRA_WAIT" : 0.2,
+    "SLEEP_MULT" : 1.0
+    },
+    "CAPTURE": {
+    "CATCH_POKEMON": true,
+    "MIN_FAILED_ATTEMPTS_BEFORE_USING_BERRY": 1,
+    "MAX_CATCH_ATTEMPTS": 20,
+    "USE_POKEBALL_IF_PERCENT": 60,
+    "USE_GREATBALL_IF_PERCENT": 30,
+    "USE_ULTRABALL_IF_PERCENT": 15,
+    "USE_MASTERBALL": false
+    },
+    "EGG_INCUBATION": {
+    "ENABLE": true,
+    "USE_DISPOSABLE_INCUBATORS": true,
+    "BIG_EGGS_FIRST": true
+    },
+    "POKEMON_EVOLUTION": {
+    "PIDGEY": 12,
+    "WEEDLE": 12,
+    "CATERPIE": 12,
+    "RATTATA": 25,
+    "BELLSPROUT": 25,
+    "ZUBAT": 50,
+    "SPEAROW": 50,
+    "SLOWPOKE": 50
+    },
+      "POKEMON_CLEANUP": {
+        "MIN_SIMILAR_POKEMON": 1,
+        "MAX_SIMILAR_POKEMON": 999,
+        "KEEP_POKEMON_NAMES": ["MEWTWO","ZAPDOS","MOLTRES","ARTICUNO","MEW","DRAGONITE"],
+        "THROW_POKEMON_NAMES": ["PIDGEY","MAGNEMITE","VOLTORB"],
+        "RELEASE_METHOD": "ADVANCED",
+        "RELEASE_METHOD_CLASSIC": {
+          "KEEP_CP_OVER": 2000,
+          "KEEP_IV_OVER": 100
+        },
+        "RELEASE_METHOD_DUPLICATES": {
+          "RELEASE_DUPLICATES_MAX_SCORE": 1000,
+          "RELEASE_DUPLICATES_SCALAR": 0.9
+        },
+        "RELEASE_METHOD_ADVANCED": {
+          "ALWAYS_RELEASE_BELOW_LEVEL": 30,
+          "KEEP_CP_OVER": 1000,
+          "KEEP_IV_OVER": 90,
+          "BEST_CP": {
+            "MIN_AMOUNT": 1,
+            "KEEP_ADDITIONAL_SCALAR": 1.0,
+            "MAX_AMOUNT": 999
+          },
+          "BEST_IV": {
+            "MIN_AMOUNT": 1,
+            "KEEP_ADDITIONAL_SCALAR": 1.0,
+            "MAX_AMOUNT": 999,
+            "IGNORE_BELOW": 50
+          }
+        },
+        "SCORE_METHOD": "CP",
+        "SCORE_METHOD_FANCY": {
+          "WEIGHT_IV": 0.5,
+          "WEIGHT_LVL": 0.5
+        }
+      },
+    "MIN_ITEMS": {
+    "ITEM_POTION": 0,
+    "ITEM_SUPER_POTION": 10,
+    "ITEM_HYPER_POTION": 10,
+    "ITEM_MAX_POTION": 30,
+    "ITEM_POKE_BALL": 20,
+    "ITEM_GREAT_BALL": 50,
+    "ITEM_ULTRA_BALL": 150,
+    "ITEM_RAZZ_BERRY": 20,
+    "ITEM_REVIVE": 10,
+    "ITEM_MAX_REVIVE": 20
+    },
+    "NEEDY_ITEM_FARMING": {
+    "ENABLE": true,
+    "POKEBALL_CONTINUE_THRESHOLD": 10,
+    "POKEBALL_FARM_THRESHOLD": 2,
+    "FARM_IGNORE_POKEBALL_COUNT": false,
+    "FARM_IGNORE_GREATBALL_COUNT": false,
+    "FARM_IGNORE_ULTRABALL_COUNT": false,
+    "FARM_IGNORE_MASTERBALL_COUNT": true,
+    "FARM_OVERRIDE_STEP_SIZE": -1
+    },
+    "CONSOLE_OUTPUT": {
+    "LIST_POKEMON_BEFORE_CLEANUP": false,
+    "LIST_INVENTORY_BEFORE_CLEANUP": false
+    }
+    },
+    {
+      "auth_service": "ptc",
+      "username": "someusername",
+      "password": "password",
+      "location": "University of Southern California, Los Angeles, CA",
+      "USE_GOOGLE": false,
+      "MIN_KEEP_IV": 70
+    }
+  ]
+}
